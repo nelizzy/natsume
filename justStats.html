@@ -1,0 +1,76 @@
+<style>.stats {
+      display: grid;
+  margin: 0 auto;
+      grid-template: repeat(6, 1fr) / 40px 1fr;
+      align-items: center;
+      width: 400px;
+      height: 130px;
+      grid-gap: 5px 5px;
+    }
+
+    .stats .Bar {
+      width: 100%;
+      background: rgba(47, 46, 43, .15);
+      height: 100%;
+    }
+
+    .stats .Bar .Bar {
+      height: 100%;
+      background: #F29C21;
+    }
+
+    .stats .health {
+      width: 5%;
+    }
+
+    .stats .chakra {
+      width: 8%;
+    }
+
+    .stats .stamina {
+      width: 6%;
+    }
+
+    .stats .speed {
+      width: 7%;
+    }
+
+    .stats .strength {
+      width: 4%;
+    }
+
+    .stats .Text {
+      font-size: 10px;
+      line-height: 1.25em;
+      text-align: right;
+    }
+
+    .stats .total {
+      grid-column: 2;
+      FONT-SIZE: 12px;
+      text-align: center;
+    }</style>
+
+<div class="stats">
+          <div class="Text">HP 5</div>
+          <div class="Bar">
+            <div class="health Bar"></div>
+          </div>
+          <div class="Text">CHA 8</div>
+          <div class="Bar">
+            <div class="chakra Bar"></div>
+          </div>
+          <div class="Text">STA 6</div>
+          <div class="Bar">
+            <div class="stamina Bar"></div>
+          </div>
+          <div class="Text">SPD 7</div>
+          <div class="Bar">
+            <div class="speed Bar"></div>
+          </div>
+          <div class="Text">STR 4</div>
+          <div class="Bar">
+            <div class="strength Bar"></div>
+          </div>
+          <div class="Text total">TOTAL STATS 30</div>
+        </div>
