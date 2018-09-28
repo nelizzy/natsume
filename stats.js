@@ -47,6 +47,6 @@ $(window).on("load", function() {
     return str["lvl"] + '%';
   });
 
-
+$("[total]").html(total["stat"] + " " + total["lvl"]);
 
 });

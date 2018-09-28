@@ -14,8 +14,8 @@
   color: white;
 }
 
-[stat] {
-  color: white;
+[total] {
+  grid-column: 1 / span 2;
 }
 
 .bar {
