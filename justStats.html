@@ -1,80 +1,17 @@
-<style>.stats {
-      display: grid;
-  margin: 0 auto;
-      grid-template: repeat(6, 1fr) / 40px 1fr;
-      align-items: center;
-      width: 400px;
-      height: 130px;
-      grid-gap: 5px 5px;
-      color: white;
-      font-family: sans-serif;
-    }
+<link rel="stylesheet" href="someStats.css">
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+<script src="stats.js"></script>
 
-    .stats .Bar {
-      width: 100%;
-      background: rgba(47, 46, 43, .50);
-      height: 100%;
-    }
-
-    .stats .Bar .Bar {
-      height: 100%;
-      background: #F29C21;
-    }
-
-    .stats .health {
-      width: 5%;
-    }
-
-    .stats .chakra {
-      width: 8%;
-    }
-
-    .stats .stamina {
-      width: 6%;
-    }
-
-    .stats .speed {
-      width: 7%;
-    }
-
-    .stats .strength {
-      width: 4%;
-    }
-
-    .stats .Text {
-      font-size: 10px;
-      line-height: 1.25em;
-      text-align: right;
-    }
-
-    .stats .total {
-      grid-column: 2;
-      FONT-SIZE: 12px;
-      text-align: center;
-    }</style>
-
-<div class="stats">
-          <div class="Text">HP 5</div>
-          <div class="Bar">
-            <div class="health Bar"></div>
-          </div>
-          <div class="Text">CHA 8</div>
-          <div class="Bar">
-            <div class="chakra Bar"></div>
-          </div>
-          <div class="Text">STA 6</div>
-          <div class="Bar">
-            <div class="stamina Bar"></div>
-          </div>
-          <div class="Text">SPD 7</div>
-          <div class="Bar">
-            <div class="speed Bar"></div>
-          </div>
-          <div class="Text">STR 4</div>
-          <div class="Bar">
-            <div class="strength Bar"></div>
-          </div>
-          <div class="Text total">TOTAL STATS 30</div>
-        </div>
-
-<iframe src="https://nelizzy.github.io/natsume/justStats.html" frameborder="0" scrolling="no" style="margin: 0 auto;"></iframe>
+<div class="stats" style="color: black;">
+  <div stat="hp"></div>
+  <div class="bar"></div>
+  <div stat="cha"></div>
+  <div class="bar"></div>
+  <div stat="sta"></div>
+  <div class="bar"></div>
+  <div stat="spd"></div>
+  <div class="bar"></div>
+  <div stat="str"></div>
+  <div class="bar"></div>
+  <div total></div>
+</div>
