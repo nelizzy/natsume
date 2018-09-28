@@ -1,0 +1,38 @@
+.stats {
+  font-size: 11px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    line-height: 18px;
+    display: grid;
+    grid-template: repeat(6, 1fr) / 1fr 3fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 200px;
+    height: 130px;
+    grid-gap: 5px 5px;
+  text-align: right;
+  color: white;
+}
+
+[stat] {
+  color: white;
+}
+
+.bar {
+  background: #f29c21;
+  width: 5%;
+  height: 18px;
+  left: 0;
+  top: 0;
+  position: relative;
+}
+
+.bar::before {
+  content: '';
+  background: rgba(100,100,100,.1);
+  width: 146.25px;
+  display: block;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
