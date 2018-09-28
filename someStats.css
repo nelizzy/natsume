@@ -12,7 +12,7 @@
     grid-gap: 5px 5px;
   text-align: right;
   color: white;
-      overflow: hidden;
+
 }
 
 [total] {
@@ -31,9 +31,9 @@
 .bar::before {
   content: '';
   background: rgba(100,100,100,.1);
-  width: 146.25px;
+  width: 100vw;
   display: block;
-  height: 100vw;
+  height: 100%;
   position: absolute;
   z-index: -1;
 }
