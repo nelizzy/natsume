@@ -29,7 +29,11 @@
 
 .bar::before {
   content: '';
+<<<<<<< HEAD
   background: rgba(100,100,100,.1);
+=======
+  background: rgba(100,100,100,.2);
+>>>>>>> 75ae69de072b48e1046d4872b013a167e4d850c1
   width: 146.25px;
   display: block;
   height: 100%;
