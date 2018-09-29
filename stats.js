@@ -2,19 +2,19 @@ $(window).on("load", function() {
 
   var hp = {
     stat: "HP",
-    lvl: 10
+    lvl: 11
   };
   var cha = {
     stat: "CHA",
-    lvl: 21
+    lvl: 30
   };
   var sta = {
     stat: "STA",
-    lvl: 13
+    lvl: 15
   };
   var spd = {
     stat: "SPD",
-    lvl: 17
+    lvl: 20
   };
   var str = {
     stat: "STR",
@@ -22,7 +22,7 @@ $(window).on("load", function() {
   };
   var total = {
     stat: "TOTAL STATS",
-    lvl: 71
+    lvl: 86
   };
 
   $("[stat=\"str\"]").html(str["stat"] + " " + str["lvl"]);
