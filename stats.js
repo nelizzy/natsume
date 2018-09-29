@@ -6,7 +6,7 @@ $(window).on("load", function() {
   };
   var cha = {
     stat: "CHA",
-    lvl: 21+10
+    lvl: 21
   };
   var sta = {
     stat: "STA",
@@ -14,7 +14,7 @@ $(window).on("load", function() {
   };
   var spd = {
     stat: "SPD",
-    lvl: 17+10
+    lvl: 17
   };
   var str = {
     stat: "STR",
@@ -27,21 +27,21 @@ $(window).on("load", function() {
 
   $("[stat=\"str\"]").html(str["stat"] + " " + str["lvl"]);
   $("[stat=\"sta\"]").html(sta["stat"] + " " + sta["lvl"]);
-  $("[stat=\"cha\"]").html(cha["stat"] + " " + cha["lvl"]);
+  $("[stat=\"cha\"]").html(cha["stat"] + " " + cha["lvl"] + " (+10)");
   $("[stat=\"hp\"]").html(hp["stat"] + " " + hp["lvl"]);
-  $("[stat=\"spd\"]").html(spd["stat"] + " " + spd["lvl"]);
+  $("[stat=\"spd\"]").html(spd["stat"] + " " + spd["lvl"] + " (+10)");
 
   $("[stat='hp'] ~ .bar").css("width", function() {
     return hp["lvl"] + '%';
   });
   $("[stat='cha'] ~ .bar").css("width", function() {
-    return cha["lvl"] + '%';
+    return cha["lvl"] + 10 + '%';
   });
   $("[stat='sta'] ~ .bar").css("width", function() {
     return sta["lvl"] + '%';
   });
   $("[stat='spd'] ~ .bar").css("width", function() {
-    return spd["lvl"] + '%';
+    return spd["lvl"] + 10 + '%';
   });
   $("[stat='str'] ~ .bar").css("width", function() {
     return str["lvl"] + '%';
