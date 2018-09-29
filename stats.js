@@ -6,7 +6,7 @@ $(window).on("load", function() {
   };
   var cha = {
     stat: "CHA",
-    lvl: 21
+    lvl: 21+10
   };
   var sta = {
     stat: "STA",
@@ -14,7 +14,7 @@ $(window).on("load", function() {
   };
   var spd = {
     stat: "SPD",
-    lvl: 17
+    lvl: 17+10
   };
   var str = {
     stat: "STR",
