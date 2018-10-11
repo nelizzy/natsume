@@ -22,7 +22,7 @@ $(window).on("load", function() {
   };
   var total = {
     stat: "TOTAL STATS",
-    lvl: 86
+    lvl: 100
   };
 
   $("[stat=\"str\"]").html(str["stat"] + " " + str["lvl"]);
