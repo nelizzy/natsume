@@ -27,9 +27,9 @@ $(window).on("load", function() {
 
   $("[stat=\"str\"]").html(str["stat"] + " " + str["lvl"]);
   $("[stat=\"sta\"]").html(sta["stat"] + " " + sta["lvl"]);
-  $("[stat=\"cha\"]").html(cha["stat"] + " " + cha["lvl"] + " (+10)");
+  $("[stat=\"cha\"]").html(cha["stat"] + " " + cha["lvl"] + "+10");
   $("[stat=\"hp\"]").html(hp["stat"] + " " + hp["lvl"]);
-  $("[stat=\"spd\"]").html(spd["stat"] + " " + spd["lvl"] + " (+10)");
+  $("[stat=\"spd\"]").html(spd["stat"] + " " + spd["lvl"] + "+10");
 
   $("[stat='hp'] ~ .bar").css("width", function() {
     return hp["lvl"] + '%';
