@@ -2,7 +2,7 @@ $(window).on("load", function() {
 
   var hp = {
     stat: "HP",
-    lvl: 15
+    lvl: 20
   };
   var cha = {
     stat: "CHA",
@@ -10,11 +10,11 @@ $(window).on("load", function() {
   };
   var sta = {
     stat: "STA",
-    lvl: 15
+    lvl: 19
   };
   var spd = {
     stat: "SPD",
-    lvl: 20
+    lvl: 25
   };
   var str = {
     stat: "STR",
